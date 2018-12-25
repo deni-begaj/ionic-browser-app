@@ -1,5 +1,7 @@
 {
   "name": "AssIntec",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
