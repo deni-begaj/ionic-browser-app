@@ -1,14 +1,35 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
       You are offline. Try reconnecting.
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content padding>
-  <br><br><br>  
-  <div text-center>
-    <img class="offline-img" src="assets/img/airplane.png" alt="Offline image">
-  </div>
+  <br>
+  <br>
+  <br> 
+
+  <ion-card>
+
+      <ion-img src="assets/img/airplane.png" class="offline-img"></ion-img>
+  
+      <ion-card-content>
+        <ion-card-title class="offline-card-title">
+          You are offline
+        </ion-card-title>
+        <p class="offline-card-content">
+          Check your internet connection.
+        </p>
+      </ion-card-content>
+  
+      <ion-row no-padding>
+        <ion-col text-right>
+          <ion-button shape="round" color="primary" fill="outline" (click)="goHome()">Reconnect</ion-button>
+        </ion-col>
+      </ion-row>
+  
+    </ion-card>
+
 </ion-content>

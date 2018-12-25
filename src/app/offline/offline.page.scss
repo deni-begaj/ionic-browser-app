@@ -1,8 +1,12 @@
-app-offline {
-    
-    .offline-img {
-        width: 70%;
-        display: none;
-    }
+.offline-img {
+    width: 70%;
+    margin: auto;
+}
 
+.offline-card-title {
+    color:white;
+}
+
+.offline-card-content {
+    color: #e2dfdf;
 }

@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
 
   @ViewChild(IonRouterOutlet) routerOutlet: IonRouterOutlet;
+  showSplash = false;
 
   constructor(
     private platform: Platform,
@@ -25,8 +26,10 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
+
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
       // Back button will exit the app.
       this.platform.backButton.subscribe(() => {
         if (this.routerOutlet && this.routerOutlet.canGoBack()) {

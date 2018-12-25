@@ -1,4 +1,55 @@
+div.bb {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url("../../assets/img/logotipo.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1); 
+    color: #81C54F;
+    box-shadow: inset 0 0 0 1px #5A932F; 
+}
 
-app-home {
-    
+div.bb span.cc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    -webkit-animation: clipMe 8s linear infinite;	
+    animation: clipMe 8s linear infinite;
+    -webkit-animation-delay: -4s;
+    animation-delay: -4s;
+}
+
+div.bb span.dd {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    -webkit-animation: clipMe 8s linear infinite;	
+    animation: clipMe 8s linear infinite;
+}
+
+@keyframes clipMe {
+    0% { clip: rect(0px, 220px, 2px, 0px);}
+    25% { clip: rect(0px, 2px, 220px, 0px);}
+    50% { clip: rect(218px, 220px, 220px, 0px);}
+    75% { clip: rect(0px, 220px, 220px, 218px);}
+    100% { clip: rect(0px, 220px, 2px, 0px);}
+}
+
+@-webkit-keyframes clipMe {
+    0% { clip: rect(0px, 220px, 2px, 0px);}
+    25% { clip: rect(0px, 2px, 220px, 0px);}
+    50% { clip: rect(218px, 220px, 220px, 0px);}
+    75% { clip: rect(0px, 220px, 220px, 218px);}
+    100% { clip: rect(0px, 220px, 2px, 0px);}
 }
